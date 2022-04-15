@@ -1,0 +1,100 @@
+img, .card{
+    cursor: pointer;
+}
+
+.navbar-expand-lg{
+    background-color: #fff;
+    width: 100%;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 80px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+.banner img{
+    position: relative;
+    margin-bottom: 3%;
+    overflow: hidden;
+    transition: all 0.9s ease;
+}
+.banner img:hover{
+    transform: scale(1.1);
+}
+.banner2 img{
+    position: relative;
+    width: 85vw;
+    border-radius: 5%;
+    height: auto;
+}
+.banner2,.banner3{
+    text-align: center;
+}
+.banner3 img{
+    position: relative;
+    width: 85vw;
+    height: auto;
+    border-radius: 5%;
+}
+.banImg{
+    position: relative;
+
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner img:hover{
+    transform: scale(1.1);
+}
+.card{
+    background: #F0F2F5;
+    width: 100%;
+    transition: all 0.8s ease-in-out;
+}
+.card img:hover{
+    transform: (1.2);
+}
+
+.mobViewCard{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .productcard{
+        display: none;
+    }
+    .mobViewCard{
+        background: #F0F2F5;
+        display: block;
+        margin-top: 5vh;
+    }
+    .card{
+        width:90vw;
+        margin-bottom: 5vh;
+    }
+    .inner{
+        overflow: hidden;
+    }
+    .inner img{
+        transition: all 1.5s ease;
+    }
+    .inner img:hover{
+        transform: scale(1.1);
+    }
+}
